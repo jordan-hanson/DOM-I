@@ -60,5 +60,21 @@ features[1].textContent = siteContent["main-content"]["about-h4"]
 const featuresContent = document.querySelectorAll('.top-content .text-content p');
 featuresContent[0].textContent = siteContent["main-content"]['features-content'];
 featuresContent[1].textContent = siteContent["main-content"]['about-content'];
-// const middleImg = document.querySelector('#middle-img');
-// logo.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+const middleImg = document.querySelector('#middle-img');
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+const bottomContent = document.querySelectorAll('.bottom-content .text-content h4');
+bottomContent[0].textContent = siteContent['main-content']['services-h4'];
+bottomContent[1].textContent = siteContent['main-content']['product-h4'];
+bottomContent[2].textContent = siteContent['main-content']['vision-h4'];
+const bottomParagraph = document.querySelectorAll('.bottom-content .text-content p');
+bottomParagraph[0].textContent = siteContent['main-content']['services-content'];
+bottomParagraph[1].textContent = siteContent['main-content']['product-content'];
+bottomParagraph[2].textContent = siteContent['main-content']['vision-content'];
+const contactTitle = document.querySelector('.contact h4')
+contactTitle.textContent = siteContent['contact']['contact-h4']
+const contactContent = document.querySelectorAll('.contact p');
+contactContent[0].textContent = siteContent['contact']['address'];
+contactContent[1].textContent = siteContent['contact']['phone'];
+contactContent[2].textContent = siteContent['contact']['email'];
+const footerContent = document.querySelector('footer p');
+footerContent.textContent = siteContent['footer']['copyright'];
